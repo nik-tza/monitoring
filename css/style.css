@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(85deg,#00916a,#1163ae,#82438e);
+    color: rgb(29, 18, 93);
+  }
+  x
+  /* Increase the font size of the h1 element */
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .header img {
+    font-size: 40px;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #ffff;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color:linear-gradient(85deg,#00916a,#1163ae,#82438e);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: #00916a  dotted;
+    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+
+  img {
+    float: right;
+    padding: 14px 20px;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #00916a;
+    color: #82438e;
+  }
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 5%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+     flex: 10%;
+    background-color:linear-gradient(85deg,#00916a,#1163ae,#82438e);
+     font-family: 'Cousine', monospace; 
+    box-sizing: border-box; 
+     padding: 40px;
+     height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+    width: 85%;
+    
+    margin-top:0;
+    margin-right:auto;
+    margin-bottom:0;
+    margin-left:auto;
+
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(85deg,#00916a,#1163ae,#82438e);
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width:100%;
+    }
+  }
+
+  .collapsible {
+    background-image:linear-gradient(to right, #00916a,#1163ae,#82438e);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-image:linear-gradient(to right, #00816a,#1163ae,#80438e);
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+
+  table
+{
+    table-layout: fixed;
+    width: 100px;
+}
+  th {
+    text-align: left;
+  }
+
+  td {
+    text-align: left;
+  }
+  tr {
+    text-align: left;
+  }
+
+  tr:nth-child(6)
+{
+  background-color: rgb(223, 20, 20);
+  animation: mymove 0.6s infinite;
+  color:white;
+}
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: rgb(50, 42, 42);}
+}
